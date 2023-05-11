@@ -41,12 +41,14 @@ M.plugins = {
 	'norcalli/nvim-colorizer.lua',
 	'nvim-lualine/lualine.nvim',
 	'RRethy/vim-illuminate',
+  'weilbith/nvim-code-action-menu',
   -- 'navarasu/onedark.nvim',
 	-- "mcchrish/zenbones.nvim",
 	-- 'rktjmp/lush.nvim',
 	-- 'agude/vim-eldar',
 	-- 'NLKNguyen/papercolor-theme',
 	-- 'maxmx03/solarized.nvim',
+	'blazkowolf/gruber-darker.nvim',
 	'morhetz/gruvbox',
 
 	-- GIT

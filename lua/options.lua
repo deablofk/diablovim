@@ -7,8 +7,8 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.termguicolors = true
 
--- vim.cmd [[colorscheme solarized]]
-vim.o.background = 'dark'
-vim.cmd('let g:gruvbox_contrast_light="hard"')
-vim.cmd('let g:gruvbox_contrast_dark="hard"')
-vim.cmd [[colorscheme gruvbox]]
+-- vim.o.background = 'dark'
+-- vim.cmd('let g:gruvbox_contrast_light="hard"')
+-- vim.cmd('let g:gruvbox_contrast_dark="hard"')
+-- vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[colorscheme gruber-darker]]

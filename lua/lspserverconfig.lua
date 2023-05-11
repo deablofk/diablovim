@@ -2,8 +2,10 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protoc
 local handler = require("lsp_handler")
 local mason_lspconfig = require("mason-lspconfig")
 
+-- use mason to select what lsp servers and formatters you will use
+-- maintain jdtls, because nvim-jdtls is configured to use the mason jdtls path
 local formatters = {'google-java-format', 'prettier'}
-local servers = { 'clangd', 'gopls', 'pyright', 'rust_analyzer', 'tsserver', 'html', 'cssls', 'jsonls', 'jdtls', 'intelephense' }
+local servers = {'clangd', 'gopls', 'pyright', 'rust_analyzer', 'tsserver', 'html', 'cssls', 'jsonls', 'jdtls', 'intelephense', 'lua_ls'}
 
 require("neodev").setup()
 require("mason").setup()
