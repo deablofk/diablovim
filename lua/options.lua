@@ -7,6 +7,8 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.termguicolors = true
 
+vim.opt.cursorline = true
+
 -- vim.o.background = 'dark'
 -- vim.cmd('let g:gruvbox_contrast_light="hard"')
 -- vim.cmd('let g:gruvbox_contrast_dark="hard"')
