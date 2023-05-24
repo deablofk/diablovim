@@ -16,7 +16,7 @@ M.plugins = {
 	'jay-babu/mason-null-ls.nvim',
 	'numToStr/Comment.nvim',
 
-	-- AUTO COMPLETION 
+	-- AUTO COMPLETION
 	'hrsh7th/nvim-cmp',
 	'hrsh7th/cmp-nvim-lsp',
 	'hrsh7th/cmp-nvim-lua',
@@ -36,13 +36,13 @@ M.plugins = {
 	'nvim-telescope/telescope-fzf-native.nvim',
 
 	-- SYNTAX HIGHLIGHT  | VISUAL STUFF
-  'nvim-treesitter/nvim-treesitter',
+	'nvim-treesitter/nvim-treesitter',
 	'lukas-reineke/indent-blankline.nvim',
 	'norcalli/nvim-colorizer.lua',
 	'nvim-lualine/lualine.nvim',
 	'RRethy/vim-illuminate',
-  'weilbith/nvim-code-action-menu',
-  -- 'navarasu/onedark.nvim',
+	'weilbith/nvim-code-action-menu',
+	-- 'navarasu/onedark.nvim',
 	-- "mcchrish/zenbones.nvim",
 	-- 'rktjmp/lush.nvim',
 	-- 'agude/vim-eldar',
@@ -60,6 +60,15 @@ M.plugins = {
 	'antosha417/nvim-lsp-file-operations',
 
 	-- ORGANIZATION
-	'vimwiki/vimwiki'
+	'vimwiki/vimwiki',
+
+	-- REST NEOVIM
+	'rest-nvim/rest.nvim',
+
+	-- DATABASE MANAGEMENT
+	-- 'thibthib18/mongo-nvim',
+	'tpope/vim-dadbod',
+	'kristijanhusak/vim-dadbod-ui',
+	'kristijanhusak/vim-dadbod-completion',
 }
 return M

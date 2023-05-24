@@ -20,7 +20,6 @@ require("mason-null-ls").setup{
 
 mason_lspconfig.setup_handlers {
   function(server_name)
-		-- disable jdtls, it will be managed by nvim-jdtls plugin
 		if server_name ~= 'jdtls' then
 			require('lspconfig')[server_name].setup {
 				capabilities = capabilities,

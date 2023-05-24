@@ -5,13 +5,23 @@ vim.g.maplocalleader = ' '
 vim.keymap.set('n', '<leader>n', ':NvimTreeFocus<CR>', { desc = 'Focus on Nvim Tree' })
 vim.keymap.set('n', '<leader>N', ':NvimTreeToggle<CR>', { desc = 'Toggle Nvim Tree' })
 
--- some emacs keymaps because its useful (insert mode only)
-vim.keymap.set('i', '<A-b>', '<S-Left>' )
-vim.keymap.set('i', '<A-f>', '<S-Right>' )
-vim.keymap.set('i', '<C-b>', '<Left>' )
-vim.keymap.set('i', '<C-f>', '<Right>' )
-vim.keymap.set('i', '<C-e>', '<End>' )
-vim.keymap.set('i', '<C-a>', '<Home>' )
+-- some emacs keymaps because its useful (insert  and command mode only)
+vim.keymap.set({'i', 'c'}, '<A-b>', '<S-Left>')
+vim.keymap.set({'i', 'c'}, '<A-f>', '<S-Right>')
+
+vim.keymap.set({'i', 'c'}, '<C-b>', '<Left>')
+vim.keymap.set({'i', 'c'}, '<C-f>', '<Right>')
+
+vim.keymap.set({'i', 'c'}, '<C-e>', '<End>')
+vim.keymap.set({'i', 'c'}, '<C-a>', '<Home>')
+
+-- emacs on command editing
+-- vim.keymap.set('c', '<C-a>', '<Home>', { noremap = true })
+-- vim.keymap.set('c', '<C-e>', '<End>', { noremap = true })
+-- vim.keymap.set('c', '<C-f>', '<Right>', { noremap = true })
+-- vim.keymap.set('c', '<C-b>', '<Left>', { noremap = true })
+-- vim.keymap.set('c', '<A-f>', '<S-Right>', { noremap = true })
+-- vim.keymap.set('c', '<A-b>', '<S-Left>', { noremap = true })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
@@ -23,10 +33,10 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
-require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-	winblend = 0,
-	previewer = false,
-})
+	require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+		winblend = 0,
+		previewer = false,
+	})
 end, { desc = '[/] Fuzzily search in current buffer]' })
 
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })

@@ -1,3 +1,26 @@
+-- TREE SITTER
+require('nvim-treesitter.configs').setup {
+	ensure_installed = {'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'vim', 'java', 'javascript', 'php', 'html', 'css', 'json', "http"},
+
+	highlight = {
+		enable = true,
+		-- disable = { 'html' }
+	},
+	indent = {
+		enable = true,
+		-- disable = { 'python' }
+	},
+	incremental_selection = {
+		enable = true,
+		keymaps = {
+			init_selection = '<c-space>',
+			node_incremental = '<c-space>',
+			scope_incremental = '<c-s>',
+			node_decremental = '<c-backspace>',
+		},
+	},
+}
+
 require('illuminate').configure({
     -- providers: provider used to get references in the buffer, ordered by priority
     providers = {

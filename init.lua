@@ -25,6 +25,8 @@ require("signature")
 require("keymaps")
 require("tree")
 require("highlight")
+require("curlrest")
+require("mongo")
 
 --vim.cmd('autocmd User PackerCompileDone lua configure()')
 
@@ -54,21 +56,5 @@ require('gitsigns').setup {
 		delete = { text = '_' },
 		topdelete = { text = '‾' },
 		changedelete = { text = '~' },
-	},
-}
-
-require('nvim-treesitter.configs').setup {
-	ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'vim', 'java' },
-
-	highlight = { enable = true, disable = { 'html' } },
-	indent = { enable = true, disable = { 'python' } },
-	incremental_selection = {
-		enable = true,
-		keymaps = {
-			init_selection = '<c-space>',
-			node_incremental = '<c-space>',
-			scope_incremental = '<c-s>',
-			node_decremental = '<c-backspace>',
-		},
 	},
 }

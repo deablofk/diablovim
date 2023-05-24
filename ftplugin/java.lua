@@ -101,4 +101,6 @@ local config = {
 		bundles = {}
 	},
 }
+
 require('jdtls').start_or_attach(config)
+vim.keymap.set('n', '<leader>co', ":!gradle classes<CR>", {buffer = vim.api.nvim_get_current_buf(), desc = 'LSP: [C]ommand [O]rganize'})

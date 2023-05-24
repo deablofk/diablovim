@@ -14,3 +14,9 @@ vim.opt.cursorline = true
 -- vim.cmd('let g:gruvbox_contrast_dark="hard"')
 -- vim.cmd [[colorscheme gruvbox]]
 vim.cmd [[colorscheme gruber-darker]]
+
+-- :cnoremap <C-A> <Home>
+-- :cnoremap <C-F> <Right>
+-- :cnoremap <C-B> <Left>
+-- :cnoremap <Esc>b <S-Left>
+-- :cnoremap <Esc>f <S-Right>
