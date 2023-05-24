@@ -7,5 +7,5 @@
 --   -- delete selected document in document_picker
 --   delete_document_mapping = nil -- "<c-d>"
 -- }
-vim.g.db_ui_save_location = "~/.config/nvim/db_ui"
+-- vim.g.db_ui_save_location = "~/.config/nvim/db_ui"
 

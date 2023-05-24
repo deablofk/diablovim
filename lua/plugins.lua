@@ -67,8 +67,8 @@ M.plugins = {
 
 	-- DATABASE MANAGEMENT
 	-- 'thibthib18/mongo-nvim',
-	'tpope/vim-dadbod',
-	'kristijanhusak/vim-dadbod-ui',
-	'kristijanhusak/vim-dadbod-completion',
+	-- 'tpope/vim-dadbod',
+	-- 'kristijanhusak/vim-dadbod-ui',
+	-- 'kristijanhusak/vim-dadbod-completion',
 }
 return M
