@@ -16,24 +16,28 @@ require("packer").startup(function(use)
 	end
 end)
 
-
+require("tree")
 require("completion")
 require("formatting")
 require("lspserverconfig")
 require("options")
 require("signature")
 require("keymaps")
-require("tree")
 require("highlight")
 require("curlrest")
 require("mongo")
+require('neoscroll').setup()
 
 --vim.cmd('autocmd User PackerCompileDone lua configure()')
 
 
 require("nvim-autopairs").setup()
 require("Comment").setup()
-require("telescope").setup()
+require("telescope").setup({
+	defaults = {
+		file_ignore_patterns = {".class"},
+	}
+})
 pcall(require("telescope").load_extension, 'fzf')
 
 require("lualine").setup{

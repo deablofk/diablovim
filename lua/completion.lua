@@ -1,11 +1,16 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
-require("luasnip/loaders/from_vscode").lazy_load()
-
 luasnip.config.set_config({
 	region_check_events = "InsertEnter",
 	delete_check_events = "TextChanged,InsertLeave"
 })
+
+-- luasnip.setup({
+-- 	region_check_events = "InsertEnter",
+-- 	delete_check_events = "InsertLeave"
+-- })
+
+require("luasnip/loaders/from_vscode").lazy_load()
 
 local cmp_icons = {
 	Text = "",
@@ -47,7 +52,7 @@ cmp.setup {
 		['<C-d'] = cmp.mapping.scroll_docs(4),
 		['<C-Space>'] = cmp.mapping.complete(),
 		['<CR>'] = cmp.mapping.confirm {
-			behavior = cmp.ConfirmBehavior.Replace,
+			-- behavior = cmp.ConfirmBehavior.Insert,
 			select = true
 		},
 		['<Tab>'] = cmp.mapping( function(fallback)

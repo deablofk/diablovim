@@ -70,5 +70,6 @@ M.plugins = {
 	-- 'tpope/vim-dadbod',
 	-- 'kristijanhusak/vim-dadbod-ui',
 	-- 'kristijanhusak/vim-dadbod-completion',
+	'karb94/neoscroll.nvim',
 }
 return M
